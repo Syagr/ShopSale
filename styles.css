@@ -51,8 +51,59 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 271px 50px;    
     background: #f8f8f8;
+    padding: 300px 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 1920px) {
+    .hero-section {
+        padding: 280px 50px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .hero-section {
+        padding: 260px 50px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .hero-section {
+        padding: 240px 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-section {
+        padding: 220px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 200px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 180px 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero-section {
+        padding: 160px 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .hero-section {
+        padding: 140px 10px;
+    }
 }
 
 .hero-content h1 {
