@@ -51,7 +51,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 50px;
+    padding: 271px 50px;    
     background: #f8f8f8;
 }
 
@@ -144,56 +144,24 @@ body {
 }
 
 /* Testimonials Section */
-
 .testimonials-section {
-	padding: 50px 50px;
-	background-color: #f5f1f1;
-	text-align: center;
-}
-
-.testimonials-section h2 {
-	font-size: 36px;
-	margin-bottom: 20px;
-}
-
-.testimonial {
-	margin: 20px 0;
-	font-style: italic;
-	background-color: #fff;
-	padding: 20px;
-	border-radius: 5px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.comparison-section {
     padding: 50px 50px;
+    background-color: #f5f1f1;
     text-align: center;
 }
 
-.comparison-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+.testimonials-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-.comparison-item {
-    list-style-type: none;
+.testimonial {
+    margin: 20px 0;
+    font-style: italic;
     background-color: #fff;
     padding: 20px;
-    border: 1px solid #ddd;
     border-radius: 5px;
-    width: 30%;
-    box-sizing: border-box;
-}
-
-.comparison-item ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.comparison-item ul li {
-    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Order Form Section */
@@ -260,4 +228,21 @@ form button:hover {
 
 .footer-links a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-features {
+        flex-direction: column;
+    }
+
+    .product-features .features-content,
+    .product-features .product-image {
+        width: 100%;
+    }
 }
